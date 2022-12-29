@@ -29,8 +29,7 @@ p {
 .link {
   text-decoration: none;
 }
-.card-list-section
-{
+.card-list-section {
   margin-bottom: 120px;
 }
 /* card list portfolio */
@@ -43,9 +42,11 @@ p {
 
 .list-element {
   flex-basis: calc((100% - 48px) / 3);
-  display: block;
-  max-width: 100%;
-  height: auto;
+}
+.list-element:hover,
+:focus {
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .borders {
   border: 1px solid var(--footer-text-color);
@@ -68,10 +69,10 @@ p {
   padding-bottom: 32px;
   padding-left: 65px;
 
- background-color: var(--white-color);
- white-space: nowrap;
- 
- 
+  background-color: var(--white-color);
+  white-space: nowrap;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .our-team-section {
   background-color: var(--back-button-color);
@@ -92,8 +93,6 @@ p {
   margin-top: 120px;
   margin-bottom: 72px;
 }
-
-
 
 .our-team {
   display: flex;
@@ -135,7 +134,7 @@ p {
 .logo-studio.logo-studio-footer {
   color: var(--white-color);
 }
-img{
+img {
   display: block;
 }
 .visually-hidden {
@@ -241,7 +240,6 @@ img{
 
   text-align: center;
   letter-spacing: 0.02em;
-
 }
 .paragraphes {
   font-weight: 400;
@@ -286,6 +284,9 @@ img{
 :focus {
   background-color: var(--secondary-button-color);
   color: var(--white-color);
+  border-color: #404bbf;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-list {
   justify-content: center;
@@ -309,7 +310,6 @@ img{
   text-align: center;
   padding-top: 188px;
   padding-bottom: 180px;
-
 }
 
 .first-headlines {
@@ -322,7 +322,6 @@ img{
   max-width: 494px;
   margin-left: auto;
   margin-right: auto;
-
 }
 /* card list index html */
 .card-list-index {
@@ -347,8 +346,10 @@ img{
   border-color: transparent;
   padding: 15px 31px;
 }
-.btn:hover {
+.btn:hover,
+:focus {
   background-color: var(--secondary-button-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer {
   background-color: var(--primary-text-color);
@@ -356,16 +357,15 @@ img{
   padding-top: 100px;
   padding-bottom: 100px;
 }
-.footer-content{
-  
-font-weight: 400;
-font-size: 16px;
-line-height: 1.5;
-/* or 150% */
+.footer-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  /* or 150% */
 
-letter-spacing: 0.02em;
+  letter-spacing: 0.02em;
 
-/* CORNFLOWER */
+  /* CORNFLOWER */
 
-width: 264px;
+  width: 264px;
 }
