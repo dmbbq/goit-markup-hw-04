@@ -9,6 +9,7 @@
   --secondary-button-color: #404bbf;
   --white-color: #fff;
   --primary-font-family: "Roboto", sans-serif;
+  --logo-font: "Raleway", sans-serif;
   --footer-text-color: #e7e9fc;
   --back-button-color: #f4f4fd;
 }
@@ -29,28 +30,28 @@ p {
 .link {
   text-decoration: none;
 }
-.card-list-section {
-  margin-bottom: 120px;
-}
+
 /* card list portfolio */
 .card-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   text-decoration: none;
+  margin-bottom: 120px;
 }
 
 .list-element {
   flex-basis: calc((100% - 48px) / 3);
-}
-.list-element:hover,
-:focus {
-  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 .borders {
   border: 1px solid var(--footer-text-color);
   border-top: none;
+  padding-top: 32px;
+  padding-left: 16px;
+  padding-bottom: 32px;
 }
 
 .list {
@@ -65,20 +66,16 @@ p {
 .name-stuff {
   text-align: center;
   padding-top: 32px;
-  padding-right: 65px;
   padding-bottom: 32px;
-  padding-left: 65px;
 
   background-color: var(--white-color);
-  white-space: nowrap;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.our-team-section {
+.our-stuff-section {
   background-color: var(--back-button-color);
-  padding-bottom: 120px;
-  padding-top: 72px;
+
+  padding-bottom: 72px;
 }
+
 .our-work {
   font-weight: 700;
   font-size: 36px;
@@ -90,8 +87,18 @@ p {
   text-transform: capitalize;
 
   /* NAVY BLUE */
-  margin-top: 120px;
-  margin-bottom: 72px;
+  padding-bottom: 120px;
+  margin-bottom: 0;
+}
+.work {
+  padding-top: 120px;
+  padding-bottom: 72px;
+  margin: 0;
+}
+.working {
+  padding-top: 0;
+  padding-bottom: 72px;
+  margin-bottom: 0;
 }
 
 .our-team {
@@ -149,10 +156,13 @@ img {
   clip-path: inset(50%);
   margin: -1px;
 }
+.prtf-card {
+  padding-bottom: 120px;
+}
 
 .header-logo {
   font-weight: 800;
-  font-family: raleway;
+  font-family: Raleway;
   margin-left: auto;
   margin-right: auto;
   display: flex;
@@ -201,7 +211,8 @@ img {
   align-items: center;
 }
 
-.header-link:hover {
+.header-link:hover,
+:focus {
   color: var(--secondary-button-color);
 }
 .header-mail {
@@ -254,14 +265,19 @@ img {
 }
 .paragraphes-portfolio {
   color: var(--secondary-text-color);
+  margin-bottom: 0;
 }
 .skills {
   margin-bottom: 8px;
 }
+.our-team-section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 .list-skills {
   display: flex;
   gap: 24px;
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 .button {
   font-weight: 600;
@@ -284,9 +300,6 @@ img {
 :focus {
   background-color: var(--secondary-button-color);
   color: var(--white-color);
-  border-color: #404bbf;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .button-list {
   justify-content: center;
@@ -294,7 +307,9 @@ img {
   gap: 24px;
   list-style: none;
   padding-top: 96px;
-  padding-bottom: 72px;
+  margin-top: 0;
+  margin-bottom: 72px;
+  padding-left: 0;
 }
 .list-headlines {
   font-weight: 600;
@@ -305,23 +320,11 @@ img {
 }
 
 .headlines-section {
-  /* background-color: var(--primary-text-color); */
+  background-color: var(--primary-text-color);
 
   text-align: center;
   padding-top: 188px;
   padding-bottom: 180px;
-}
-.hero {
-  max-width: 1440px;
-  height: 600px;
-  margin-left: auto;
-  margin-right: auto;
-
-  background-image: url(../herotitle/herotitle.jpg);
-
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
 }
 
 .first-headlines {
@@ -339,7 +342,6 @@ img {
 .card-list-index {
   display: flex;
   gap: 24px;
-  padding-bottom: 120px;
 }
 .btn {
   font-family: inherit;
@@ -358,16 +360,20 @@ img {
   border-color: transparent;
   padding: 15px 31px;
 }
-.btn:hover,
-:focus {
+.btn:hover {
   background-color: var(--secondary-button-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .footer {
   background-color: var(--primary-text-color);
   color: var(--footer-text-color);
   padding-top: 100px;
   padding-bottom: 100px;
+}
+.ftr-logo {
+  font-family: Raleway;
+
+  display: flex;
+  margin-bottom: 16px;
 }
 .footer-content {
   font-weight: 400;
