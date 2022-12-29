@@ -305,11 +305,23 @@ img {
 }
 
 .headlines-section {
-  background-color: var(--primary-text-color);
+  /* background-color: var(--primary-text-color); */
 
   text-align: center;
   padding-top: 188px;
   padding-bottom: 180px;
+}
+.hero {
+  max-width: 1440px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-image: url(../herotitle/herotitle.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .first-headlines {
