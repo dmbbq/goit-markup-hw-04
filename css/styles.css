@@ -12,7 +12,7 @@
   --logo-font: "Raleway", sans-serif;
   --footer-text-color: #e7e9fc;
   --back-button-color: #f4f4fd;
-  --soc-bg-color:#4D5AE5;
+  --soc-bg-color: #4d5ae5;
 }
 body {
   color: var(--primary-text-color);
@@ -80,24 +80,24 @@ p {
 .stuff-soc-list {
   display: flex;
   justify-content: center;
-  gap:24px;
+  gap: 24px;
 }
 .stuff-soc-item {
   width: 40px;
   height: 40px;
-
 }
 .stuff-soc-link {
   width: 100%;
   height: 100%;
-  background-color:var(--soc-bg-color);
+  background-color: var(--soc-bg-color);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
-
+.stuff-soc-link:hover {
+  background-color: var(--secondary-button-color);
+}
 
 .our-stuff-section {
   background-color: var(--back-button-color);
@@ -127,11 +127,11 @@ p {
   padding-top: 0;
   margin-bottom: 72px;
 }
-.customers-section{
+.customers-section {
   padding-top: 130px;
   /* padding-bottom: 280px; */
 }
-.customers-headline{
+.customers-headline {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.11;
@@ -140,15 +140,17 @@ p {
   text-align: center;
   letter-spacing: 0.02em;
   margin-bottom: 72px;
-
 }
 .customers {
+  display: flex;
+
 }
 
 .customers-list {
-  
 }
 .customers-link {
+  /* background-image: url(../customers/logo1.svg); */
+ 
 }
 
 .our-team {
@@ -332,53 +334,58 @@ img {
   display: flex;
   gap: 24px;
   /* margin-top: 120px; */
-
 }
-.list-skills-item:nth-child(1)::before{
-  
-    content: '';
-    display: inline-block;
-    width: 264px;
-    height: 112px;
-    background-image: url(../our-skills/antenna1.svg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F4F4FD;
-
+/* .list-skills-item:nth-child(1)::before {
+  content: "";
+  display: inline-block;
+  width: 264px;
+  height: 112px;
+  background-image: url(../our-skills/antenna1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f4f4fd;
 }
-.list-skills-item:nth-child(2)::before{
-  content: '';
+.list-skills-item:nth-child(2)::before {
+  content: "";
   display: inline-block;
   width: 264px;
   height: 112px;
   background-image: url(../our-skills/clock1.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F4F4FD;
-
+  background-color: #f4f4fd;
 }
-.list-skills-item:nth-child(3)::before{
-  content: '';
+.list-skills-item:nth-child(3)::before {
+  content: "";
   display: inline-block;
   width: 264px;
   height: 112px;
   background-image: url(../our-skills/diagram1.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F4F4FD;
-  
+  background-color: #f4f4fd;
 }
-.list-skills-item:nth-child(4)::before{
-  content: '';
+.list-skills-item:nth-child(4)::before {
+  content: "";
   display: inline-block;
   width: 264px;
   height: 112px;
   background-image: url(../our-skills/astronaut.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #F4F4FD;
-  
+  background-color: #f4f4fd;
+} */
+.svg-skills{
+  width: 264px;
+  height: 112px;
+  background-color: #f4f4fd;
+  display:inline-block;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
+
 }
+
 
 .button {
   font-weight: 600;
@@ -485,6 +492,7 @@ img {
   padding-bottom: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 .ftr-logo {
   font-family: Raleway;
 
