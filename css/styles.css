@@ -321,6 +321,7 @@ img {
   margin-bottom: 0;
 }
 .skills {
+  margin-top: 8px;
   margin-bottom: 8px;
 }
 .our-team-section {
@@ -331,7 +332,54 @@ img {
   display: flex;
   gap: 24px;
   /* margin-top: 120px; */
+
 }
+.list-skills-item:nth-child(1)::before{
+  
+    content: '';
+    display: inline-block;
+    width: 264px;
+    height: 112px;
+    background-image: url(../our-skills/antenna1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #F4F4FD;
+
+}
+.list-skills-item:nth-child(2)::before{
+  content: '';
+  display: inline-block;
+  width: 264px;
+  height: 112px;
+  background-image: url(../our-skills/clock1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F4F4FD;
+
+}
+.list-skills-item:nth-child(3)::before{
+  content: '';
+  display: inline-block;
+  width: 264px;
+  height: 112px;
+  background-image: url(../our-skills/diagram1.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F4F4FD;
+  
+}
+.list-skills-item:nth-child(4)::before{
+  content: '';
+  display: inline-block;
+  width: 264px;
+  height: 112px;
+  background-image: url(../our-skills/astronaut.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #F4F4FD;
+  
+}
+
 .button {
   font-weight: 600;
   font-size: 16px;
