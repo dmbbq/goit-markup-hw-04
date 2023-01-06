@@ -130,7 +130,7 @@ p {
 }
 .customers-section {
   padding-top: 130px;
-  /* padding-bottom: 280px; */
+  padding-bottom: 120px;
 }
 .customers-headline {
   font-weight: 700;
@@ -144,13 +144,33 @@ p {
 }
 .customers {
   display: flex;
+  gap: 24px;
 }
 
 .customers-list {
+  width: calc((100%-120px / 6));
+  height: 88px;
 }
 .customers-link {
-  /* background-image: url(../customers/logo1.svg); */
+  width: 100%;
+  height: 100%;
+  border: 1px solid #8e8f99;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.customers-icon{
+  fill: #afb1b8;
+}
+
+.customers-link:hover {
+  border-color: var(--secondary-button-color);
+}
+.customers-link:hover .customers-icon{
+  fill: #404bbf;
+}
+
 
 .our-team {
   display: flex;
