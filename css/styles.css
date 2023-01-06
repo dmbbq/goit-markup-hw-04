@@ -159,17 +159,28 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
-.customers-icon{
-  fill: #afb1b8;
-}
-
 .customers-link:hover {
   border-color: var(--secondary-button-color);
 }
 .customers-link:hover .customers-icon{
   fill: #404bbf;
 }
+.customers-icon{
+  fill: #8E8F99;
+}
+
+
+  
+
+
+
+
+
+
+
+
 
 
 .our-team {
@@ -532,8 +543,9 @@ img {
 .ftr-logo {
   font-family: Raleway;
 
-  display: flex;
+  display: inline-block;
   margin-bottom: 16px;
+  margin-right: 269px;
 }
 .footer-content {
   font-weight: 400;
@@ -548,3 +560,28 @@ img {
   width: 264px;
   margin-bottom: 0;
 }
+.social-media{
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+/* identical to box height, or 150% */
+
+letter-spacing: 0.02em;
+
+}
+.ftr-soc-list{
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+
+  
+
+}
+.ftr-soc-item {
+}
+.ftr-soc-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
