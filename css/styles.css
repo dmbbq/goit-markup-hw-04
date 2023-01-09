@@ -96,6 +96,8 @@ p {
   align-items: center;
   justify-content: center;
 }
+
+
 .stuff-soc-link:hover {
   background-color: var(--secondary-button-color);
 }
@@ -159,7 +161,12 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: #8E8F99;
   
+  
+}
+.customers-icon{
+  fill: currentColor;
 }
 .customers-link:hover {
   border-color: var(--secondary-button-color);
@@ -167,9 +174,7 @@ p {
 .customers-link:hover .customers-icon{
   fill: #404bbf;
 }
-.customers-icon{
-  fill: #8E8F99;
-}
+
 
 
   
@@ -345,6 +350,7 @@ img {
 
   letter-spacing: 0.02em;
   margin-bottom: 8px;
+  max-width: 264px;
 
   /* SLATE */
 }
@@ -532,6 +538,7 @@ img {
 .btn:hover {
   background-color: var(--secondary-button-color);
 }
+
 .footer {
   background-color: var(--primary-text-color);
   color: var(--footer-text-color);
@@ -560,28 +567,51 @@ img {
   width: 264px;
   margin-bottom: 0;
 }
+.ftr{
+  display: flex;
+}
+.socaial-two{
+
+  width: 208px;
+  
+}
 .social-media{
+  display: block;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 /* identical to box height, or 150% */
 
 letter-spacing: 0.02em;
+margin-bottom: 16px;
 
 }
+
 .ftr-soc-list{
+
   display: flex;
   gap: 16px;
-  justify-content: center;
-
+  /* justify-content: center; */
+  margin-left: auto;
   
-
 }
 .ftr-soc-item {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+
 }
 .ftr-soc-link {
   width: 40px;
   height: 40px;
+  display: flex;
   border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.ftr-soc-item:hover{
+  background-color: #31D0AA;
 }
 
