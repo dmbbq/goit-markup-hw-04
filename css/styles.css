@@ -96,7 +96,6 @@ p {
   justify-content: center;
 }
 
-
 .stuff-soc-link:hover {
   background-color: var(--secondary-button-color);
 }
@@ -160,40 +159,19 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #8E8F99;
-  
-  
+  color: #8e8f99;
 }
-.customers-icon{
+.customers-icon {
   fill: currentColor;
 }
-.customers-icon{
-  fill: currentColor;
+.customers-link:hover .customers-icon {
+  fill: #404bbf;
 }
+
+
 .customers-link:hover {
   border-color: var(--secondary-button-color);
 }
-
-.customers-link:hover .customers-icon{
-  fill: #404bbf;
-  
-}
-
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 5200a711e4a7baf3042fae90b6ef1a510f818795
-
-
-  
-
-
-
-
-
-
-
 
 
 
@@ -359,11 +337,10 @@ img {
 
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-<<<<<<< HEAD
+
   max-width: 264px;
-=======
+
   width: 264px;
->>>>>>> 5200a711e4a7baf3042fae90b6ef1a510f818795
 
   /* SLATE */
 }
@@ -381,7 +358,7 @@ img {
 }
 
 .svg-list {
-  width: calc((100% - 72px / 4));
+  max-width: calc((100% - 72px / 4));
   display: flex;
   gap: 24px;
 }
@@ -559,7 +536,6 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
 .ftr-logo {
@@ -582,53 +558,40 @@ img {
   max-width: 264px;
   margin-bottom: 0;
 }
-.ftr{
+.ftr {
   display: flex;
 }
-.socaial-two{
-
+.socaial-one{
+  margin-right: 120px;
+}
+.socaial-two {
   width: 208px;
-  
 }
-.social-media{
-<<<<<<< HEAD
+.social-media {
   display: block;
-=======
-display: inline-block;
 
->>>>>>> 5200a711e4a7baf3042fae90b6ef1a510f818795
-font-weight: 500;
-font-size: 16px;
-line-height: 1.5;
-/* identical to box height, or 150% */
+  display: inline-block;
 
-letter-spacing: 0.02em;
-margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  /* identical to box height, or 150% */
 
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
 }
 
-.ftr-soc-list{
-
+.ftr-soc-list {
   display: flex;
   gap: 16px;
-<<<<<<< HEAD
+
   /* justify-content: center; */
   margin-left: auto;
-=======
-
-
->>>>>>> 5200a711e4a7baf3042fae90b6ef1a510f818795
-  
 }
 .ftr-soc-item {
-<<<<<<< HEAD
   width: 40px;
   height: 40px;
   border-radius: 50%;
-=======
- 
->>>>>>> 5200a711e4a7baf3042fae90b6ef1a510f818795
-
 }
 .ftr-soc-link {
   width: 40px;
@@ -637,15 +600,8 @@ margin-bottom: 16px;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
-
 }
 
-.ftr-soc-item:hover{
-  background-color: #31D0AA;
+.ftr-soc-item:hover {
+  background-color: #31d0aa;
 }
-.soc-div{
-}
-
-
-
-
